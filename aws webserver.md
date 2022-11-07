@@ -48,6 +48,8 @@ folgende Zeilen hinzufügen und die Datei speichern:
 ### HTTP-Netzwerkverbindungen überprüfen
     sudo systemctl status httpd
 ### PublicIPaddress kopieren und im Browser einfügen
+Public IP Adress: 18.185.118.99
+
 ![Apache](https://miro.medium.com/max/720/1*dQz8HxEfH0nzgI8Tz2eA3w.png)
 
 ## Referenz
