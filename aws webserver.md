@@ -20,6 +20,8 @@ in der AWS Konsole unter Instance/Instance Types t2.micro auswählen
     aws ec2 create-key-pair --key-name StefanS-Linux-Key --query 'KeyMaterial' --output text > StefanS-Linux-Key.pem
     aws ec2 describe-key-pairs --key-name StefanS-Linux-Key
 ## Security Group erstellen und Regeln hinzufügen
+Security Group ID: sg-06c3d2869b88ec830
+Port 22 für SSH und Port 80 für HTTP werde für eingehende Verbindungen freigegeben
     aws ec2 create-security-group --group-name StefanS-MyWebSG --description "Allows SSH and HTTP connections for the Web Server"
     aws ec2 authorize-security-group-ingress --group-id sg-06c3d2869b88ec830 --protocol tcp --port 22 --cidr 0.0.0.0/0
     aws ec2 describe-security-groups --group-ids sg-06c3d2869b88ec830
