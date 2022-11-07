@@ -31,7 +31,7 @@ webscript.sh in C://Users/<your user name> folgende Zeilen hinzufügen und die D
     systemctl enable httpd
 ## EC2 Instance erstellen
     aws ec2 run-instances --image-id ami-00db75007d6c5c578 --count 1 --instance-type t2.micro --key-name NVirKeyPair --security-group-ids sg-0f139302620926844 --user-data file://webscript.sh
-##EC2 Instance und Webserver überprüfen
+## EC2 Instance und Webserver überprüfen
 ### Status überprüfen
     aws ec2 describe-instances
 ### als ec2-user über ssh einloggen
