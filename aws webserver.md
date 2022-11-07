@@ -27,7 +27,7 @@ webscript.sh in C://Users/<your user name> erstellen
     
 folgende Zeilen hinzufügen und die Datei speichern:
     
-    !/bin/bash
+    #!/bin/bash
     yum update -y
     yum install httpd -y
     systemctl start httpd
