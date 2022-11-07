@@ -24,12 +24,15 @@ in der AWS Konsole unter Instance/Instance Types t2.micro auswählen
     aws ec2 describe-security-groups --group-ids sg-0f139302620926844
 ## Apache Script erstellen
 webscript.sh in C://Users/<your user name> erstellen
+    
 folgende Zeilen hinzufügen und die Datei speichern:
+    
     !/bin/bash
     yum update -y
     yum install httpd -y
     systemctl start httpd
     systemctl enable httpd
+    
 ## EC2 Instance erstellen
     aws ec2 run-instances --image-id ami-00db75007d6c5c578 --count 1 --instance-type t2.micro --key-name NVirKeyPair --security-group-ids sg-0f139302620926844 --user-data file://webscript.sh
 ## EC2 Instance und Webserver überprüfen
