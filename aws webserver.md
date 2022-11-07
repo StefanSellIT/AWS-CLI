@@ -1,9 +1,9 @@
-Titel: Webserver in AWS mit CLI erstellen
+Titel: Webserver in AWS mit CLI erstellen - Dokumentation
 Author: Stefan Sell
 Date: 07-11-2022
 Keywords: AWS, CLI, Apache, Webserver
 
-# Webserver in AWS mit CLI erstellen
+# Webserver in AWS mit CLI erstellen - Dokumentation
 
 ## Die aktuelle Version des CLI ermitteln
     aws --version   
@@ -24,7 +24,7 @@ in der AWS Konsole unter Instance/Instance Types t2.micro auswählen
     aws ec2 authorize-security-group-ingress --group-id sg-06c3d2869b88ec830 --protocol tcp --port 22 --cidr 0.0.0.0/0
     aws ec2 describe-security-groups --group-ids sg-06c3d2869b88ec830
 ## EC2 Script zum Start des Apache Webserver erstellen
-Datei webscript.sh in C://Users/your user name erstellen
+Datei webscript.sh in C:\Benutzer\Stefan.Sell erstellen
 
 folgende Zeilen hinzufügen und die Datei speichern:
 
