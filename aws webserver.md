@@ -23,7 +23,8 @@ in der AWS Konsole unter Instance/Instance Types t2.micro auswählen
     aws ec2 authorize-security-group-ingress --group-id sg-0f139302620926844 --protocol tcp --port 22 --cidr 0.0.0.0/0
     aws ec2 describe-security-groups --group-ids sg-0f139302620926844
 ## Apache Script erstellen
-webscript.sh in C://Users/<your user name> folgende Zeilen hinzufügen und die Datei speichern:
+webscript.sh in C://Users/<your user name> erstellen
+folgende Zeilen hinzufügen und die Datei speichern:
     #!/bin/bash
     yum update -y
     yum install httpd -y
